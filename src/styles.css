@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@theme {
+  --color-sion-dark: #2E3436;
+  --color-sion-bg: #F9F7F4;
+  --color-sion-accent: #616669;
+  --color-sion-cream: #F4EEE0;
+}

@@ -1,0 +1,141 @@
+:host {
+	display: block;
+}
+
+.navbar {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	width: 100%;
+	background: var(--color-sion-bg);
+	box-shadow: 0 3px 0 rgba(46, 52, 54, 0.08);
+	
+}
+
+.navbar__inner {
+	height: 88px;
+	margin: 0 auto;
+	padding: 0 24px;
+	display: grid;
+	grid-template-columns: 356px 1fr auto;
+	align-items: center;
+	column-gap: 32px;
+}
+
+.navbar__brand {
+	width: 356px;
+	height: 58px;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.navbar__logo {
+	height: 58px;
+	object-fit: contain;
+	display: block;
+}
+
+.navbar__nav {
+	justify-self: right;
+	display: flex;
+	align-items: center;
+	gap: 52px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.navbar__link {
+	appearance: none;
+	border: 0;
+	background: transparent;
+	padding: 0;
+	color: var(--color-sion-dark);
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 0;
+	cursor: pointer;
+	transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.navbar__link:hover {
+	opacity: 0.75;
+}
+
+.navbar__link--active {
+	border-bottom: 1px solid currentColor;
+}
+
+.navbar__link--dropdown {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.navbar__caret {
+	font-size: 10px;
+	line-height: 1;
+	transform: translateY(1px);
+}
+
+.navbar__quote {
+	appearance: none;
+	border: 0;
+	padding: 0 28px;
+	min-width: 160px;
+	height: 38px;
+	color: #ffffff;
+	background: var(--color-sion-dark);
+	clip-path: polygon(4% 18%, 12% 6%, 88% 6%, 96% 18%, 100% 50%, 96% 82%, 88% 94%, 12% 94%, 4% 82%, 0 50%);
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+	transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar__quote:hover {
+	opacity: 0.92;
+	transform: translateY(-1px);
+}
+
+@media (max-width: 1024px) {
+	.navbar__inner {
+		grid-template-columns: minmax(220px, 320px) 1fr auto;
+		column-gap: 20px;
+	}
+
+	.navbar__nav {
+		gap: 32px;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar__inner {
+		height: auto;
+		padding: 14px 16px;
+		grid-template-columns: 1fr;
+		row-gap: 12px;
+		justify-items: center;
+	}
+
+	.navbar__brand {
+		width: 280px;
+		height: 46px;
+		justify-content: center;
+	}
+
+	.navbar__logo {
+		width: 280px;
+		height: 46px;
+	}
+
+	.navbar__nav,
+	.navbar__quote {
+		display: none;
+	}
+}

@@ -1,0 +1,46 @@
+<section
+  class="relative w-full h-100 md:h-125 lg:h-150 overflow-hidden">
+
+  <!-- Slides -->
+  @for(image of images; track image; let i = $index) {
+
+    <div
+      class="absolute inset-0"
+      [style.opacity]="currentIndex === i ? 1 : 0">
+
+      <img
+        [src]="image"
+        class="w-full h-full object-cover"
+        alt="Hero image">
+
+    </div>
+
+  }
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Content -->
+  <div
+    class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4">
+
+    <img
+      src="assets/logos/sionlarge.png"
+      alt="Logo"
+      class="w-32 md:w-40 mb-4">
+
+
+
+    <p
+      class="text-white text-xl md:text-3xl mt-4">
+      Building your vision.
+    </p>
+
+    <button
+      class="mt-8 px-8 py-3 bg-white text-black rounded shadow-lg hover:scale-105 transition">
+      OUR SERVICES
+    </button>
+
+  </div>
+
+</section>
