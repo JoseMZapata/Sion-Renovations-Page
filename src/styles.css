@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "flyonui";
+@source "./app";
 
 @theme {
   --color-sion-dark: #2E3436;

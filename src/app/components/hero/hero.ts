@@ -1,4 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-hero',
@@ -6,7 +7,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })
-export class Hero implements OnInit, OnDestroy{
+export class Hero implements OnInit, OnDestroy {
 
   images: string[] = [
     'assets/heroimages/hero-1.jpeg',
@@ -18,14 +19,23 @@ export class Hero implements OnInit, OnDestroy{
   currentIndex = 0;
   interval: any;
 
+  // Inyectamos el ID de la plataforma para identificar el entorno de ejecución
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   ngOnInit() {
-    this.interval = setInterval(() => {
-      this.nextSlide();
-    }, 5000);
+    // Solo ejecutamos el macro-task si estamos del lado del cliente (navegador)
+    if (isPlatformBrowser(this.platformId)) {
+      this.interval = setInterval(() => {
+        this.nextSlide();
+      }, 5000);
+    }
   }
 
   ngOnDestroy() {
-    clearInterval(this.interval);
+    // Verificamos que el intervalo exista antes de limpiarlo
+    if (this.interval) {
+      clearInterval(this.interval);
+    }
   }
 
   nextSlide() {
