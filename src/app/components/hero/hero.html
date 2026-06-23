@@ -1,55 +1,49 @@
-<section>
+<link
+  href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap"
+  rel="stylesheet">
+<!-- hero.component.html -->
+<section class="hero-container">
 
-  <div class="slide">
-            <div class="slide-inner">
-                <input class="slide-open" type="radio" id="slide-1" 
-                      name="slide" aria-hidden="true" hidden="" checked="checked">
-                <div class="slide-item">
-                    <img src="assets/heroimages/hero-1.jpeg">
-                </div>
-                <input class="slide-open" type="radio" id="slide-2" 
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <img src="assets/heroimages/hero-2.jpeg">
-                </div>
-                <input class="slide-open" type="radio" id="slide-3" 
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <img src="assets/heroimages/hero-3.jpeg">
-                </div>
-                <div class="slide-item">
-                    <img src="assets/heroimages/hero-4.jpeg">
-                </div>
-                <div class="slide-item">
-                    <img src="assets/heroimages/hero-5.jpeg">
-                </div>
-                <label for="slide-3" class="slide-control prev control-1">‹</label>
-                <label for="slide-2" class="slide-control next control-1">›</label>
-                <label for="slide-1" class="slide-control prev control-2">‹</label>
-                <label for="slide-3" class="slide-control next control-2">›</label>
-                <label for="slide-2" class="slide-control prev control-3">‹</label>
-                <label for="slide-1" class="slide-control next control-3">›</label>
-                <label for="slide-2" class="slide-control prev control-4">‹</label>
-                <label for="slide-1" class="slide-control next control-4">›</label>
-                <label for="slide-2" class="slide-control prev control-5">‹</label>
-                <label for="slide-1" class="slide-control next control-5">›</label>
-                <ol class="slide-indicador">
-                    <li>
-                        <label for="slide-1" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-2" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-3" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-4" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-5" class="slide-circulo">•</label>
-                    </li>
-                </ol>
-            </div>
-        </div>
+  <!-- Imagen de fondo -->
+  <div
+    class="hero-background"
+    [style.background-image]="'url(assets/heroimages/hero-1.jpeg)'">
+  </div>
+
+  <!-- Overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- Contenido -->
+  <div class="hero-content">
+
+    <div class="flex flex-col md:flex-row items-center gap-8">
+
+      <!-- Logo -->
+      <img
+        src="assets/logos/sionlarge.png"
+        alt="Logo"
+        class="hero-logo">
+
+      <!-- Texto -->
+      <div>
+        <h1 class="hero-title">
+          Building your vision
+        </h1>
+
+        <h1 class="hero-subtitle">
+          Solid foundations for your projects
+        </h1>
+      </div>
+
+    </div>
+
+    <!-- Botón -->
+    <button
+      (click)="scrollToServices()"
+      class="hero-button">
+      OUR SERVICES
+    </button>
+
+  </div>
+
 </section>
