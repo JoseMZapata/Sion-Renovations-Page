@@ -1,0 +1,89 @@
+.card-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: inherit;
+}
+
+.card-btn:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+  border-radius: 12px;
+}
+
+.card-image-wrapper {
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-btn:hover .card-image {
+  transform: scale(1.06);
+}
+
+.card-title {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+}
+
+.special-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 18.75rem;
+  border: 2px dashed #d1d5db;
+  border-radius: 16px;
+  padding: 2rem;
+  cursor: pointer;
+  background: none;
+  font-family: inherit;
+  transition: border-color 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.special-btn:hover {
+  border-color: #6b7280;
+  background-color: #f9fafb;
+}
+
+.special-btn:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+.special-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #9ca3af;
+}
+
+.special-text {
+  text-align: center;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+  color: #6b7280;
+}
+
+.special-link {
+  font-weight: 600;
+  text-decoration: underline;
+  color: #1f2937;
+}

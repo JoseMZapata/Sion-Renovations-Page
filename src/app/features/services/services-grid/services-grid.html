@@ -1,0 +1,22 @@
+<div class="services-grid">
+
+  <div
+    *ngFor="let service of services"
+    class="service-item"
+    [class.service-item--special]="service.isSpecial">
+
+    <app-service-card
+      [service]="service"
+      (click)="openService(service)">
+    </app-service-card>
+
+  </div>
+
+</div>
+
+<app-service-modal *ngIf="showModal" (close)="closeModal()" />
+
+<app-service-gallery
+  *ngIf="galleryService"
+  [service]="galleryService"
+  (close)="closeGallery()" />

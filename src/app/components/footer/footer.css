@@ -1,0 +1,24 @@
+.footer{
+    background-color: blanchedalmond;
+}
+
+
+.separador {
+    display: flex;
+    width: min(80vw, 100%);
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.mountain {
+    display: flex;
+    position: absolute;
+    right: clamp(8px, 2vw, 24px);
+    top: clamp(10%, 8vw, 15%);
+    z-index: 20;
+    object-fit: contain;
+    
+}
