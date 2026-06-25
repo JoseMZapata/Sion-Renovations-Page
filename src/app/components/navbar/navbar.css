@@ -153,14 +153,14 @@
 	}
 
 	.navbar__brand {
-		width: min(70vw, 280px);
-		height: 54px;
+		width: min(75vw, 300px);
+		height: 56px;
 		justify-content: flex-start;
 	}
 
 	.navbar__logo {
 		width: 100%;
-		height: 54px;
+		height: 56px;
 	}
 
 	.navbar__nav,
@@ -181,18 +181,10 @@
 	}
 
 	.navbar__menuIcon {
-		width: 26px;
-		height: 20px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	.navbar__menuIcon span {
+		width: 28px;
+		height: 28px;
 		display: block;
-		height: 2.5px;
-		border-radius: 2px;
-		background: var(--color-sion-dark);
+		object-fit: contain;
 	}
 
 	.navbar__backdrop--open {
@@ -293,12 +285,12 @@
 	}
 
 	.navbar__brand {
-		width: 55vw;
-		height: 42px;
+		width: 65vw;
+		height: 44px;
 	}
 
 	.navbar__logo {
-		height: 42px;
+		height: 44px;
 	}
 
 	.navbar__menuToggle {
@@ -306,11 +298,7 @@
 	}
 
 	.navbar__menuIcon {
-		width: 22px;
-		height: 16px;
-	}
-
-	.navbar__menuIcon span {
-		height: 2px;
+		width: 24px;
+		height: 24px;
 	}
 }
