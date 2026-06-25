@@ -7,7 +7,7 @@
 
 @media (max-width: 767px) {
   .hero-container {
-    height: clamp(320px, 55vh, 450px);
+    height: clamp(280px, 45vh, 380px);
   }
 }
 
@@ -20,13 +20,6 @@
   transition:
     opacity 0.4s ease,
     transform 0.6s ease;
-}
-
-@media (max-width: 767px) {
-  .hero-background {
-    background-size: auto 80%;
-    background-position: 55% center;
-  }
 }
 
 .hero-container:hover .hero-background {
