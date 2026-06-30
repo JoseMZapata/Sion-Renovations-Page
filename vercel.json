@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build",
-  "installCommand": "npm install",
-  "outputDirectory": "dist/sion-web/browser"
+  "buildCommand": "cd sion-web && npm run build",
+  "installCommand": "cd sion-web && npm install",
+  "outputDirectory": "sion-web/dist/sion-web/browser"
 }
