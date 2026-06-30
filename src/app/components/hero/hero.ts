@@ -7,6 +7,11 @@ import { Component} from '@angular/core';
   styleUrl: './hero.css',
 })
 export class Hero {
+  tapped = false;
+
+  toggleHero(): void {
+    this.tapped = !this.tapped;
+  }
 
   scrollToServices(): void {
     const servicesSection = document.getElementById('services');

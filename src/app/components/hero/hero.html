@@ -1,4 +1,4 @@
-<section class="hero-container">
+<section class="hero-container" [class.tapped]="tapped" (click)="toggleHero()">
 
   <!-- Imagen de fondo -->
   <div
@@ -35,7 +35,7 @@
 
     <!-- Botón -->
     <button
-      (click)="scrollToServices()"
+      (click)="scrollToServices(); $event.stopPropagation()"
       class="hero-button">
       OUR SERVICES
     </button>
