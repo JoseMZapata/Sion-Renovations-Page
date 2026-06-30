@@ -29,9 +29,8 @@ yarn-error.log
 !.vscode/mcp.json
 .history/*
 
-# Subprojects (tracked separately)
+# Nested git repo (tracked separately)
 /sion-web
-/backend
 
 # Miscellaneous
 /.angular/cache
