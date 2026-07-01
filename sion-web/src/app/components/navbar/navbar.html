@@ -1,8 +1,8 @@
 <header class="navbar">
   <div class="navbar__inner">
-    <button class="navbar__brand" type="button" aria-label="Sion Renovations home">
+    <a class="navbar__brand" routerLink="/" aria-label="Sion Renovations home">
       <img src="assets/logos/sionheadnew.png" alt="Sion Renovations Logo" class="navbar__logo">
-    </button>
+    </a>
 
     <button
       class="navbar__menuToggle"
@@ -16,12 +16,12 @@
     </button>
 
     <nav class="navbar__nav" aria-label="Primary navigation">
-      <button class="navbar__link navbar__link--active" type="button" (click)="closeMenu()">HOME</button>
+      <a class="navbar__link" routerLink="/" routerLinkActive="navbar__link--active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">HOME</a>
       <button class="navbar__link navbar__link--dropdown" type="button" (click)="closeMenu()">
         <span>SERVICES</span>
         <span class="navbar__caret" aria-hidden="true">▼</span>
       </button>
-      <button class="navbar__link" type="button" (click)="closeMenu()">PROJECTS</button>
+      <a class="navbar__link" routerLink="/projects" routerLinkActive="navbar__link--active" (click)="closeMenu()">PROJECTS</a>
       <button class="navbar__link" type="button" (click)="closeMenu()">ABOUT US</button>
       <img src="assets/logos/freeQuote.png" class="navbar__quote" alt="">
     </nav>
@@ -47,12 +47,12 @@
       </div>
 
       <div class="navbar__mobileLinks">
-        <button class="navbar__mobileLink navbar__mobileLink--active" type="button" (click)="closeMenu()">HOME</button>
+        <a class="navbar__mobileLink" routerLink="/" routerLinkActive="navbar__mobileLink--active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">HOME</a>
         <button class="navbar__mobileLink navbar__mobileLink--dropdown" type="button" (click)="closeMenu()">
           <span>SERVICES</span>
           <span class="navbar__caret" aria-hidden="true">▼</span>
         </button>
-        <button class="navbar__mobileLink" type="button" (click)="closeMenu()">PROJECTS</button>
+        <a class="navbar__mobileLink" routerLink="/projects" routerLinkActive="navbar__mobileLink--active" (click)="closeMenu()">PROJECTS</a>
         <button class="navbar__mobileLink" type="button" (click)="closeMenu()">ABOUT US</button>
         <img src="assets/logos/freeQuote.png" class="navbar__quote navbar__quote--mobile" alt="">
       </div>

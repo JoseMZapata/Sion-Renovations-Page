@@ -66,6 +66,9 @@
 	letter-spacing: 0;
 	cursor: pointer;
 	white-space: nowrap;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
 	transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -258,6 +261,8 @@
 		color: var(--color-sion-dark);
 		border-bottom: 1px solid rgba(46, 52, 54, 0.1);
 		cursor: pointer;
+		text-decoration: none;
+		display: block;
 	}
 
 	.navbar__mobileLink--active {
