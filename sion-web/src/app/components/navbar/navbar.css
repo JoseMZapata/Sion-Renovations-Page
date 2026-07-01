@@ -1,11 +1,12 @@
 :host {
 	display: block;
-}
-
-.navbar {
 	position: sticky;
 	top: 0;
 	z-index: 60;
+	background: #f9f7f4;
+}
+
+.navbar {
 	width: 100%;
 	background: var(--color-sion-bg);
 	box-shadow: 0 3px 0 rgba(46, 52, 54, 0.08);

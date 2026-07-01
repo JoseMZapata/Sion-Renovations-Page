@@ -1,0 +1,9 @@
+#services {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 767px) {
+  #services {
+    scroll-margin-top: 80px;
+  }
+}

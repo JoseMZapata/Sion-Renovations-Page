@@ -111,65 +111,19 @@
   font-size: 22px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .footer-top {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 20px 20px 0;
+    padding: 16px 20px 0;
+    gap: 14px;
   }
 
   .footer-header {
-    width: 100%;
+    width: 60%;
   }
 
   .footer-header h2 {
-    text-align: center;
-    font-size: 28px;
-  }
-
-  .mountain-logo {
-    width: 180px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-    padding: 40px 20px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    height: auto;
-    gap: 10px;
-    padding: 15px 0;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer-top {
-    gap: 20px;
-    padding: 16px 16px 0;
-  }
-
-  .footer-header h2 {
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 12px;
-  }
-
-  .header-line {
-    gap: 8px;
-  }
-
-  .header-line span {
-    height: 3px;
-  }
-
-  .circle {
-    width: 8px;
-    height: 8px;
   }
 
   .mountain-logo {
@@ -177,44 +131,114 @@
   }
 
   .footer-content {
-    gap: 40px;
-    padding: 30px 16px;
-  }
-
-  .footer-logo img {
-    width: 180px;
-  }
-
-  .footer-contact h3 {
-    font-size: 28px;
-    margin-bottom: 18px;
-  }
-
-  .socials {
+    padding: 30px 20px;
     gap: 20px;
   }
 
+  .footer-logo img {
+    width: 140px;
+  }
+
+  .footer-contact h3 {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  .socials {
+    gap: 16px;
+  }
+
   .socials img {
-    width: 38px;
+    width: 36px;
   }
 
   .footer-values h3 {
-    font-size: 28px;
-    margin-bottom: 14px;
-  }
-
-  .footer-values ul {
-    padding-left: 20px;
+    font-size: 26px;
   }
 
   .footer-values li {
-    font-size: 18px;
-    margin-bottom: 6px;
+    font-size: 17px;
   }
 
   .footer-bottom {
-    font-size: 14px;
-    padding: 12px 0;
-    gap: 6px;
+    height: auto;
+    padding: 8px 16px;
+    gap: 8px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-top {
+    padding: 12px 12px 0;
+    gap: 10px;
+  }
+
+  .footer-header {
+    width: 58%;
+  }
+
+  .footer-header h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .header-line {
+    gap: 5px;
+  }
+
+  .header-line span {
+    height: 2px;
+  }
+
+  .circle {
+    width: 6px;
+    height: 6px;
+  }
+
+  .mountain-logo {
+    width: 90px;
+  }
+
+  .footer-content {
+    padding: 18px 12px;
+    gap: 14px;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+
+  .footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .socials {
+    gap: 10px;
+  }
+
+  .socials img {
+    width: 26px;
+  }
+
+  .footer-values h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .footer-values ul {
+    padding-left: 14px;
+  }
+
+  .footer-values li {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+    padding: 6px 10px;
+    gap: 3px;
   }
 }
